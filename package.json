@@ -5,7 +5,8 @@
   "main": "build/index.js",
   "scripts": {
     "build": "webpack",
-    "run": "webpack && node ./build/function.js"
+    "deploy:dev": "npm run build && functions deploy austenbot --trigger-http --local-path=./build",
+    "exec:dev": "npm run deploy:dev && functions call austenbot"
   },
   "author": "",
   "license": "ISC",

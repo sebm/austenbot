@@ -1,6 +1,8 @@
 class QuoteGrabber {
-    honk() {
-        console.log('honk');
+    getQuote() {
+        return new Promise((resolve, reject) => {
+            resolve('Hi');
+        });
     }
 }
 
