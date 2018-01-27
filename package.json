@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "build": "webpack",
-    "deploy:dev": "npm run build && functions deploy austenbot --trigger-http --local-path=./build",
+    "deploy:dev": "npm run build && cp -r data build && functions deploy austenbot --trigger-http --local-path=./build",
     "exec:dev": "npm run deploy:dev && functions call austenbot",
     "harness:qb": "node -r @std/esm harness/harness-quote-grabber"
   },

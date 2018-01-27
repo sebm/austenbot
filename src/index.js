@@ -7,7 +7,7 @@ function austenbot (req, res) {
         res.send(quote);
         res.end();
     }).catch(reason => {
-        res.send(error);
+        res.send(reason);
         res.end();
     });
 };
