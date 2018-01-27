@@ -10,7 +10,7 @@
     "harness:qb": "node -r @std/esm harness/harness-quote-grabber"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@std/esm": "^0.19.7",
     "babel-preset-env": "^1.6.1",
