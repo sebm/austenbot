@@ -1,0 +1,11 @@
+{
+  "name": "austenbot",
+  "version": "1.0.0",
+  "description": "ES6 Twitter bot for lines from Pride and Prejudice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
