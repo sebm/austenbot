@@ -4,8 +4,13 @@
   "description": "ES6 Twitter bot for lines from Pride and Prejudice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "run": "webpack && node ./build/function.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0"
+  }
 }
