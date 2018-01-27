@@ -11,7 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@std/esm": "^0.19.7",
     "babel-preset-env": "^1.6.1",
     "webpack": "^3.10.0"
-  }
+  },
+  "@std/esm": "cjs"
+
 }
