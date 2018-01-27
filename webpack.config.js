@@ -8,6 +8,6 @@ module.exports = {
     output: {
         libraryTarget: 'commonjs',
         path: path.join(__dirname, 'build'),
-        filename: 'function.js'
+        filename: 'index.js'
     }
 }

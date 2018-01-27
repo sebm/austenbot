@@ -2,7 +2,7 @@
   "name": "austenbot",
   "version": "1.0.0",
   "description": "ES6 Twitter bot for lines from Pride and Prejudice",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "webpack",
     "run": "webpack && node ./build/function.js"
