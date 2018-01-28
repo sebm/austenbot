@@ -9,7 +9,7 @@
     "exec:dev": "npm run deploy:dev && functions call austenbot",
     "harness:qb": "node -r @std/esm harness/harness-quote-grabber"
   },
-  "author": "",
+  "author": "Sebastian Motraghi",
   "license": "MIT",
   "devDependencies": {
     "@std/esm": "^0.19.7",
