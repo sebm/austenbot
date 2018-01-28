@@ -4,8 +4,9 @@
   "description": "ES6 Twitter bot for lines from Pride and Prejudice",
   "main": "build/index.js",
   "scripts": {
-    "build": "webpack",
-    "deploy:dev": "npm run build && cp -r data build && functions deploy austenbot --trigger-http --local-path=./build",
+    "build": "webpack && cp -r data build",
+    "deploy:dev": "npm run build && functions deploy austenbot --trigger-http --local-path=./build",
+    "deploy:prod": "npm run build && gcloud beta functions deploy austenbot --source build --trigger-http",
     "exec:dev": "npm run deploy:dev && functions call austenbot",
     "harness:qb": "node -r @std/esm harness/harness-quote-grabber"
   },
