@@ -16,6 +16,9 @@
     "babel-preset-env": "^1.6.1",
     "webpack": "^3.10.0"
   },
-  "@std/esm": "cjs"
-
+  "@std/esm": "cjs",
+  "dependencies": {
+    "lodash.sample": "^4.2.1",
+    "sbd": "^1.0.12"
+  }
 }

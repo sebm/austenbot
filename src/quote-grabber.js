@@ -1,4 +1,6 @@
 import { readFile } from "fs";
+import { sentences } from 'sbd';
+import sample from 'lodash.sample';
 
 class QuoteGrabber {
     getQuote() {
@@ -8,7 +10,10 @@ class QuoteGrabber {
                     reject(err) 
                 }
 
-                resolve(data);
+                const validSentences = sentences(data.replace(/\n/g, ' '))
+                    .filter(sentence => sentence.length < 280);
+
+                resolve(sample(validSentences));
             })
         });
     }
