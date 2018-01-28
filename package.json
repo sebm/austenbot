@@ -19,6 +19,7 @@
   "@std/esm": "cjs",
   "dependencies": {
     "lodash.sample": "^4.2.1",
-    "sbd": "^1.0.12"
+    "sbd": "^1.0.12",
+    "twit": "^2.2.9"
   }
 }
